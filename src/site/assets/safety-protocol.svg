@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#FCFBEE"/>
+  <rect opacity="0.1" width="800" height="600" fill="url(#pattern0)"/>
+  <path d="M400 100L700 250V450L400 550L100 450V250L400 100Z" stroke="#4E3E2F" stroke-width="2" stroke-dasharray="10 10"/>
+  <circle cx="400" cy="325" r="100" stroke="#CEAA6A" stroke-width="4"/>
+  <path d="M350 325L385 360L450 295" stroke="#CEAA6A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="480" text-anchor="middle" fill="#4E3E2F" font-family="Calibri, sans-serif" font-size="24" font-weight="bold" letter-spacing="0.2em">HSE PROTOCOL ACTIVE</text>
+  <defs>
+    <pattern id="pattern0" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="#A19D94" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+</svg>

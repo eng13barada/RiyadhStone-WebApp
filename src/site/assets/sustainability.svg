@@ -1,0 +1,9 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#FCFBEE"/>
+  <circle cx="400" cy="300" r="200" stroke="#CEAA6A" stroke-width="1" stroke-dasharray="4 4"/>
+  <path d="M400 150C450 150 500 200 500 300C500 400 450 450 400 450C350 450 300 400 300 300C300 200 350 150 400 150Z" stroke="#4E3E2F" stroke-width="2"/>
+  <path d="M400 200V400" stroke="#A19D94" stroke-width="1"/>
+  <path d="M300 300H500" stroke="#A19D94" stroke-width="1"/>
+  <circle cx="400" cy="300" r="5" fill="#CEAA6A"/>
+  <text x="400" y="520" text-anchor="middle" fill="#4E3E2F" font-family="Calibri, sans-serif" font-size="18" font-weight="bold" letter-spacing="0.4em">SUSTAINABILITY MATRIX</text>
+</svg>

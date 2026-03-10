@@ -1,0 +1,17 @@
+﻿# Paste Stitch "hosted URLs" here (ONE per screen) using this exact format:
+# <SCREEN_ID>|<HOSTED_URL>
+#
+# Screens:
+# 1) About RiyadhStone Narrative
+#    65c4ef737b06484a87e8b6d1ed5b0b0e
+# 2) RiyadhStone Master Hub Home
+#    4d4c54e57ef44c20849c62b7fc9cbbf0
+# 3) RiyadhStone Master Hub Home
+#    dd80577fca244adaa4d664ee20145614
+# 4) RiyadhStone® Master Hub Home
+#    6d2bda5a5b91420eb992e18cc3bfb34a
+#
+65c4ef737b06484a87e8b6d1ed5b0b0e|
+4d4c54e57ef44c20849c62b7fc9cbbf0|
+dd80577fca244adaa4d664ee20145614|
+6d2bda5a5b91420eb992e18cc3bfb34a|

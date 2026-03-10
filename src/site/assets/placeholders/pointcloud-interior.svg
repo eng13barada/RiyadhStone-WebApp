@@ -1,0 +1,22 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#24201C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A1714;stop-opacity:1" />
+    </linearGradient>
+    <filter id="noiseD"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/></filter>
+    <pattern id="gridD" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#CEAA6A" opacity="0.15" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#gradD)" />
+  <rect width="1200" height="800" filter="url(#noiseD)" opacity="0.03" />
+  <rect width="1200" height="800" fill="url(#gridD)" />
+  <!-- Instrument Accents -->
+  <path d="M40 40 L80 40 M40 40 L40 80" stroke="#CEAA6A" stroke-width="2" fill="none" opacity="0.3" />
+  <path d="M1160 760 L1120 760 M1160 760 L1160 720" stroke="#CEAA6A" stroke-width="2" fill="none" opacity="0.3" />
+  <circle cx="1140" cy="60" r="4" fill="#CEAA6A" opacity="0.5" />
+  <line x1="0" y1="400" x2="1200" y2="400" stroke="#CEAA6A" stroke-width="1" opacity="0.1" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="bold" letter-spacing="4" fill="#FCFBEE" opacity="0.2">INTERIOR POINTCLOUD</text>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="12" letter-spacing="4" fill="#CEAA6A" opacity="0.3">LOCAL ASSET</text>
+</svg>

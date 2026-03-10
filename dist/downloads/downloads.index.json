@@ -1,0 +1,12 @@
+[
+  { "id": "1", "title": "Technical Data Sheet - RiyadEx™", "category": "Submittals", "filename": "TDS_RiyadEx.pdf" },
+  { "id": "2", "title": "Sample Register Template", "category": "Quality", "filename": "Sample_Register.pdf" },
+  { "id": "3", "title": "ITP - Façade Installation", "category": "Quality", "filename": "ITP_Facade.pdf" },
+  { "id": "4", "title": "HSE Policy 2024", "category": "HSE", "filename": "HSE_Policy.pdf" },
+  { "id": "5", "title": "Toolbox Talk Pack", "category": "HSE", "filename": "Toolbox_Talk_Pack.pdf" },
+  { "id": "6", "title": "Checklist - Incoming Stone", "category": "Quality", "filename": "Checklist_Incoming.pdf" },
+  { "id": "7", "title": "Delivery Safety Protocol", "category": "HSE", "filename": "Delivery_Safety.pdf" },
+  { "id": "8", "title": "Material Approval Request (MAR)", "category": "Submittals", "filename": "MAR_Template.pdf" },
+  { "id": "9", "title": "Sustainability Report Q4", "category": "Sustainability", "filename": "Sustainability_Q4.pdf" },
+  { "id": "10", "title": "BIM Coordination Guide", "category": "Engineering", "filename": "BIM_Guide.pdf" }
+]

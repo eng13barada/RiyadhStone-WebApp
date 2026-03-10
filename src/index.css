@@ -1,0 +1,231 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rs-ivory: #fcfbee;
+  --rs-sand: #f3ddb2;
+  --rs-gold: #ceaa6a;
+  --rs-brown: #4e3e2f;
+  --rs-brown2: #524435;
+  --rs-ink: #24201c;
+  --rs-muted: #625c55;
+  --rs-border: #a19d94;
+  --rs-cool: #305264;
+}
+
+/* Global base */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+  background: var(--rs-ivory);
+  color: var(--rs-ink);
+  position: relative;
+  overflow-x: clip;
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
+}
+
+/* Custom Scrollbar - Branded */
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: #fcfbee;
+}
+::-webkit-scrollbar-thumb {
+  background: #ceaa6a;
+  border-radius: 10px;
+  border: 2px solid #fcfbee;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8c6d3f;
+}
+
+/* Cinematic background gradients */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(
+      1200px 600px at 20% 10%,
+      rgba(206, 170, 106, 0.12),
+      rgba(206, 170, 106, 0) 60%
+    ),
+    radial-gradient(
+      900px 500px at 80% 20%,
+      rgba(78, 62, 47, 0.15),
+      rgba(78, 62, 47, 0) 55%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(36, 32, 28, 0.04) 0%,
+      rgba(252, 251, 238, 0) 45%,
+      rgba(243, 221, 178, 0.08) 100%
+    );
+}
+
+/* Global noise overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 99;
+  opacity: 0.0075; /* Reduced by 50% */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100%;
+}
+
+/* Glass Panel System — Stable CSS (Independent of Tailwind fragile utilities) */
+.glass-panel-ivory {
+  background: rgba(252, 251, 238, 0.75);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(161, 157, 148, 0.25);
+  box-shadow: 0 8px 32px -4px rgba(36, 32, 28, 0.1);
+  border-radius: 0;
+}
+
+.glass-panel-dark {
+  background: rgba(36, 32, 28, 0.7);
+  backdrop-filter: blur(24px) saturate(110%);
+  -webkit-backdrop-filter: blur(24px) saturate(110%);
+  border: 1px solid rgba(252, 251, 238, 0.12);
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+}
+
+/* Band System */
+.rs-band {
+  position: relative;
+  overflow: hidden;
+  transition: background 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Theme Band Utilities */
+.band-dark {
+  background-color: #12100e;
+  color: #fcfbee;
+}
+.band-light {
+  background-color: #fcfbee;
+  color: #24201c;
+}
+
+/* Technical Overlays */
+.rs-noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.005; /* Reduced by 50% */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+.rs-grid-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(var(--rs-gold) 0.5px, transparent 0.5px);
+  background-size: 40px 40px;
+  opacity: 0.04;
+}
+
+/* Instrument Signals (Micro-animations) */
+.instrument-scanline {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--rs-gold), transparent);
+  box-shadow: 0 0 8px var(--rs-gold);
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.instrument-glow-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--rs-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--rs-gold);
+}
+
+/* Utility helpers */
+.rs-card {
+  border-radius: 0;
+  border: 1px solid rgba(161, 157, 148, 0.2);
+  background: rgba(252, 251, 238, 0.9);
+  box-shadow: 0 4px 20px -2px rgba(36, 32, 28, 0.05);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.rs-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--rs-gold);
+  box-shadow: 0 30px 60px -12px rgba(36, 32, 28, 0.12);
+}
+
+/* Texture support */
+.rs-stone-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.0025; /* Reduced by 50% */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)'/%3E%3C/svg%3E");
+}
+
+/* Global utility cleanups */
+.rs-card-base {
+  border-radius: 0;
+  border: 1px solid rgba(161, 157, 148, 0.2);
+  background: rgba(252, 251, 238, 0.9);
+  box-shadow: 0 4px 20px -2px rgba(36, 32, 28, 0.05);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rs-hero-bg {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(36, 32, 28, 0.85) 0%,
+      rgba(36, 32, 28, 0.4) 45%,
+      rgba(252, 251, 238, 0) 100%
+    ),
+    url("/assets/images/hero_stone_facade.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* 3D Flip Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
