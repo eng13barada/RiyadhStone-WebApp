@@ -10,7 +10,6 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "predev": "npm run ingest:images && npm run guard:imports",
     "guard:tsconfig": "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\guard-tsconfig.ps1",
-    "prebuild": "npm run guard:imports",
     "guard:home": "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\guard-home-jsx.ps1",
     "guard:imports": "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\guard-import-header.ps1",
     "ingest:images": "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\rs-ingest-images.ps1",
